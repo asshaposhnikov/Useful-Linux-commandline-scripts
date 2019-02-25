@@ -1,0 +1,34 @@
+
+#This is example of config file for you SSH client-toserver easy connections
+#Just place this file in you user folder /.ssh  , and setup you SSH server for keys athentication
+#then just type in command line: ssh myvps1 , and connect to you server fast and without password prompting.
+
+
+Host myvps1
+HostName 11.22.33.44
+ServerAliveInterval 50
+User user1
+PubKeyAuthentication yes
+Port 22
+Protocol 2
+IdentityFile /home/user/.ssh/openssh-format-private-key-file-no1
+
+
+Host linuxservervpn
+HostName 10.8.0.1
+ServerAliveInterval 50
+User user2
+PubKeyAuthentication yes
+Port 22
+Protocol 2
+IdentityFile /home/user/.ssh/openssh-format-private-key-file-no2
+
+
+Host myvps2
+HostName 12.21.12.21
+ServerAliveInterval 50
+User user3
+PubKeyAuthentication yes
+Port 44765
+Protocol 2
+IdentityFile /home/aleks/.ssh/time4vps-latvia/root/openssh-format-private-key-file-no3
